@@ -1,13 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// BrowserRouter is aka higher order component - HOC
+
+// higher order fns take fns as argument
+// Just like higher order function ,they take components as arguments
+
+// named imports are designed to allow for multiple imports from a single statement
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      {/*HOC pattern*/}
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
