@@ -5,11 +5,13 @@ import { Route } from "react-router-dom";
 import Currencies from "./pages/Currencies";
 import Main from "./pages/Main";
 import Price from "./pages/Price";
+import Nav from "./components/Nav";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
+      <Nav />
       <Route path="/">
         <Main />
       </Route>
